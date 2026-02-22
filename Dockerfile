@@ -36,9 +36,6 @@ WORKDIR /app
 # Copiar binário do builder
 COPY --from=builder /build/whatsapp-api .
 
-# Copiar assets se houver
-COPY api/.env.example .env
-
 # Criar diretório de dados
 RUN mkdir -p /data/sessions && \
     chown -R appuser:appuser /app /data
