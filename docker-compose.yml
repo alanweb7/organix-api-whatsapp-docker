@@ -1,10 +1,8 @@
-version: '3.9'
-
 services:
   whatsapp-api:
     build:
-      context: ../
-      dockerfile: docker/Dockerfile
+      context: .
+      dockerfile: Dockerfile
     container_name: whatsapp-api
     restart: unless-stopped
     ports:
@@ -18,7 +16,6 @@ services:
       TZ: America/Sao_Paulo
     volumes:
       - whatsapp-data:/data
-      - ./logs:/app/logs
     networks:
       - whatsapp-network
     healthcheck:
