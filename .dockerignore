@@ -1,0 +1,58 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+.DS_Store
+*.log
+
+# Build artifacts
+*.exe
+*.so
+*.dylib
+dist/
+build/
+
+# Test
+*.test
+coverage.out
+*.cover
+
+# Dependencies
+vendor/
+node_modules/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Data
+data/
+*.db
+*.sqlite
+logs/
+
+# Docker
+docker-compose.dev.yml
+Dockerfile.dev
+.dockerignore
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
+
+# Docs (opcional - remover se quiser nos containers)
+*.md
+README*
+
+# OS
+.DS_Store
+Thumbs.db
